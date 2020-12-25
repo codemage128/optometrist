@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        'App\Console\Commands\PayDebtInvoice',
+        //
     ];
 
     /**
@@ -24,8 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('PayDebtInvoice:pay')
-                 ->dailyAt('1:00');
+        // $schedule->command('inspire')->hourly();
     }
 
     /**
